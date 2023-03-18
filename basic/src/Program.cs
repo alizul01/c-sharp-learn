@@ -69,6 +69,13 @@
                 double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
                 Console.WriteLine("The hypotenuse of the right triangle is " + c + "."); // print
             }
+
+            // String method
+            Console.WriteLine("String method");
+            String phoneNumber = "1-234-567-890";
+
+            Console.WriteLine(phoneNumber.Replace("-", "/")); // print
+            Console.WriteLine(phoneNumber.Length); // print
         }
     }
 }
