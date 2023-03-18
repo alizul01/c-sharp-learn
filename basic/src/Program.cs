@@ -98,10 +98,22 @@
             // Method
             Console.WriteLine("Method");
             MyMethod(); // call method
+            Console.WriteLine(Multiply(2, 3)); // print
+            Console.WriteLine(Multiply(2.5, 3.5)); // print
         }
 
         static void MyMethod() {
             Console.WriteLine("I just got executed!"); // print
+        }
+
+        // Method with parameters
+        static int Multiply(int x, int y) {
+            return x * y;
+        }
+
+        // Overloading
+        static double Multiply(double x, double y) {
+            return x * y;
         }
     }
 }
