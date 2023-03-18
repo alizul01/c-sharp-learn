@@ -40,7 +40,10 @@
             }
 
             Console.WriteLine("Your favorite color is " + color + "."); // print
-            Console.ReadKey(); // wait for user input
+            
+            // Get Type
+            Console.WriteLine("Get Type");
+            Console.WriteLine(age.GetType()); // print
         }
     }
 }
