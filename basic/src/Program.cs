@@ -40,10 +40,35 @@
             }
 
             Console.WriteLine("Your favorite color is " + color + "."); // print
-            
+
             // Get Type
             Console.WriteLine("Get Type");
             Console.WriteLine(age.GetType()); // print
+
+            // Math 
+            double x = 3;
+            double pow = Math.Pow(x, 2);
+
+            Console.WriteLine("3 to the power of 2 is " + pow + "."); // print
+
+            // Random Number
+            Random ran = new Random();
+            Console.WriteLine("Random Number");
+            Console.WriteLine(ran.Next(1, 10)); // print
+
+            // Hypotenuse of a right triangle
+            Console.WriteLine("Enter side A : ");
+            double a = Convert.ToDouble(Console.ReadLine()); // read input from user and convert to Double
+
+            Console.WriteLine("Enter side B : ");
+            double b = Convert.ToDouble(Console.ReadLine()); // read input from user and convert to int
+
+            if (a == 0 || b == 0) {
+                Console.WriteLine("Please enter a valid number."); // print
+            } else {
+                double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+                Console.WriteLine("The hypotenuse of the right triangle is " + c + "."); // print
+            }
         }
     }
 }
