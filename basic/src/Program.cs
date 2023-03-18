@@ -76,6 +76,32 @@
 
             Console.WriteLine(phoneNumber.Replace("-", "/")); // print
             Console.WriteLine(phoneNumber.Length); // print
+
+            // Array
+            Console.WriteLine("Array");
+
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+            Console.WriteLine("For Loop");
+            for (int i = 0; i < cars.Length; i++)
+            {
+                Console.WriteLine(cars[i]); // print
+            }
+
+            // for each
+            Console.WriteLine("For Each");
+            foreach (var item in cars)
+            {
+                Console.WriteLine(item); // print
+            }
+
+            // Method
+            Console.WriteLine("Method");
+            MyMethod(); // call method
+        }
+
+        static void MyMethod() {
+            Console.WriteLine("I just got executed!"); // print
         }
     }
 }
