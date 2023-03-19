@@ -1,4 +1,4 @@
-﻿namespace HelloWorld
+﻿namespace FirstProgram
 {
     class MainClass
     {
@@ -135,6 +135,12 @@
             // Params
             int[] numbers = { 1, 2, 3, 4, 5 };
             Console.WriteLine(add(numbers)); // print
+
+            // OOP
+            Console.WriteLine("OOP");
+
+            Hello obj = new Hello();
+            obj.Hi();
         }
 
         static void MyMethod()
@@ -163,6 +169,19 @@
                 sum += item;
             }
             return sum;
+        }
+    }
+
+    class Messages
+    {
+        public static void Welcome()
+        {
+            Console.WriteLine("Welcome to my program!"); // print
+        }
+
+        public static void Goodbye()
+        {
+            Console.WriteLine("Goodbye!"); // print
         }
     }
 }
